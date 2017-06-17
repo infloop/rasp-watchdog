@@ -1,7 +1,7 @@
 const gpio = require('rpi-gpio');
 
 const pin   = 7;
-const delay = 2000;
+const delay = 200;
 const max   = 3;
 let count = 0;
 
@@ -10,13 +10,13 @@ gpio.setup(pin, gpio.DIR_OUT, on);
 
 function on() {
     if (count >= max) {
-        gpio.destroy(function() {
+        gpio.destroy(() => {
             console.log('Closed pins, now exit');
         });
         return;
     }
 
-    setTimeout(function() {
+    setTimeout(() => {
         gpio.write(pin, 1, off);
         count += 1;
     }, delay);
