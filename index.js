@@ -1,8 +1,8 @@
 const gpio = require('rpi-gpio');
 
 const pin   = 7;
-const delay = 200;
-const max   = 3;
+const delay = 70;
+const max   = 300;
 let count = 0;
 
 console.log(`Starting on pin [${pin}]`);
