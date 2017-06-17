@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/infloop/rasp-watchdog/issues"
   },
-  "homepage": "https://github.com/infloop/rasp-watchdog#readme"
+  "homepage": "https://github.com/infloop/rasp-watchdog#readme",
+  "dependencies": {
+    "rpi-gpio": "^0.8.1"
+  }
 }
