@@ -1,0 +1,22 @@
+{
+  "name": "rasp-watchdog",
+  "version": "1.0.0",
+  "description": "Watchdog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infloop/rasp-watchdog.git"
+  },
+  "keywords": [
+    "watchdog"
+  ],
+  "author": "infloop",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/infloop/rasp-watchdog/issues"
+  },
+  "homepage": "https://github.com/infloop/rasp-watchdog#readme"
+}
