@@ -1,10 +1,11 @@
-var gpio = require('rpi-gpio');
+const gpio = require('rpi-gpio');
 
-var pin   = 7;
-var delay = 2000;
-var count = 0;
-var max   = 3;
+const pin   = 7;
+const delay = 2000;
+const max   = 3;
+let count = 0;
 
+console.log(`Starting on pin [${pin}]`);
 gpio.setup(pin, gpio.DIR_OUT, on);
 
 function on() {
@@ -22,7 +23,7 @@ function on() {
 }
 
 function off() {
-    setTimeout(function() {
+    setTimeout(() => {
         gpio.write(pin, 0, on);
     }, delay);
 }
