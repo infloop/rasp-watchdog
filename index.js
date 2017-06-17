@@ -27,3 +27,11 @@ function off() {
         gpio.write(pin, 0, on);
     }, delay);
 }
+
+// changes
+const smokePin = 11;
+
+gpio.on('change',(channel, value) => {
+    console.log('Channel ' + channel + ' value is now ' + value);
+});
+gpio.setup(smokePin, gpio.DIR_IN, gpio.EDGE_BOTH);
